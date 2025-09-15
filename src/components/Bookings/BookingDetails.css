@@ -1,0 +1,514 @@
+/* Booking Details - Invoice-like Design */
+
+.booking-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: 'Cairo', 'Tajawal', 'Noto Kufi Arabic', Arial, sans-serif;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+.booking-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #e2e8f0;
+}
+
+.booking-details-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.booking-details-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.booking-details-actions button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+
+.btn-pdf {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-pdf:hover {
+  background-color: #059669;
+}
+
+.btn-print {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-print:hover {
+  background-color: #2563eb;
+}
+
+.btn-edit {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #d97706;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.booking-details-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.invoice-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 30px;
+  background-color: #f8fafc;
+  border-bottom: 3px solid #31beb5;
+}
+
+.company-info {
+  text-align: right;
+}
+
+.company-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #31beb5;
+  margin: 0 0 15px 0;
+}
+
+.company-subtitle {
+  font-size: 20px;
+  color: #64748b;
+  margin: 0 0 20px 0;
+}
+
+.invoice-meta {
+  font-size: 18px;
+  color: #64748b;
+}
+
+.invoice-meta > div {
+  margin-bottom: 5px;
+}
+
+.booking-info {
+  text-align: left;
+}
+
+.booking-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+}
+
+.booking-meta {
+  font-size: 18px;
+  color: #64748b;
+}
+
+.booking-meta > div {
+  margin-bottom: 8px;
+}
+
+.centered-header {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.centered-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #10b981;
+  margin: 0;
+}
+
+.cost-breakdown-section {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+  text-align: right;
+}
+
+.cost-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cost-item {
+  padding: 15px;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.cost-item.commission {
+  background-color: #fef3c7;
+}
+
+.cost-label {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.cost-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.total-cost {
+  text-align: center;
+  padding: 25px;
+  background-color: #31beb5;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 30px 30px 30px;
+}
+
+.user-card {
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-right: 4px solid #31beb5;
+}
+
+.user-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+  text-align: right;
+}
+
+.user-details {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.user-detail {
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.no-data {
+  color: #64748b;
+  text-align: center;
+  font-style: italic;
+}
+
+.bank-section {
+  margin: 0 30px 30px 30px;
+  padding: 20px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  border: 2px solid #31beb5;
+}
+
+.bank-details {
+  font-size: 16px;
+  color: #64748b;
+  text-align: right;
+}
+
+.bank-info {
+  margin-bottom: 10px;
+}
+
+.bank-value {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.trip-addons-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 30px 30px 30px;
+  align-items: start;
+}
+
+.trip-section {
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #31beb5;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addons-section {
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #31beb5;
+}
+
+.trip-info {
+  text-align: right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trip-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.trip-details {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trip-details span {
+  display: block;
+  padding: 6px 12px;
+  /* background-color: #ffffff; */
+  border-radius: 4px;
+  /* border: 1px solid #e2e8f0; */
+  font-weight: 500;
+}
+
+.trip-price {
+  text-align: center;
+  padding: 12px 16px;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #31beb5;
+  border: none;
+  margin-top: auto;
+}
+
+.addons-list {
+  font-size: 14px;
+  color: #64748b;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.addon-item {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+  text-align: right;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.addon-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.addon-details {
+  font-size: 12px;
+  color: #64748b;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.addon-details span {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.invoice-footer {
+  margin-top: 40px;
+  padding: 20px 30px;
+  border-top: 2px solid #e2e8f0;
+  text-align: center;
+  font-size: 16px;
+  color: #64748b;
+  background-color: #f8fafc;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .booking-details {
+    padding: 10px;
+  }
+  
+  .booking-details-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .booking-details-actions {
+    justify-content: center;
+  }
+  
+  .invoice-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .cost-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trip-addons-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .company-title {
+    font-size: 28px;
+  }
+  
+  .centered-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cost-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .invoice-header {
+    padding: 20px;
+  }
+  
+  .cost-breakdown-section {
+    padding: 20px;
+  }
+  
+  .user-grid {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .trip-addons-row {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .bank-section {
+    margin: 0 20px 20px 20px;
+  }
+}
+
+@media print {
+  .booking-details-header {
+    display: none;
+  }
+  
+  .booking-details {
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .booking-details-content {
+    box-shadow: none;
+  }
+  
+  .invoice-header {
+    background-color: #ffffff;
+  }
+  
+  .centered-header {
+    background-color: #ffffff;
+  }
+  
+  .user-card,
+  .trip-section,
+  .addons-section,
+  .bank-section {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .total-cost {
+    background-color: #31beb5 !important;
+    color: #ffffff !important;
+  }
+}
