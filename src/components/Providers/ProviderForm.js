@@ -28,6 +28,8 @@ const ProviderForm = ({ providerId, onBack, onSuccess }) => {
     profileImage: null,
     balance: 0,
     accountName: '',
+    bankName: '',
+    IbanNumber: '',
     status: 'Active' // Active, Inactive, Suspended
   });
   const [cities, setCities] = useState([]);
@@ -108,7 +110,9 @@ const ProviderForm = ({ providerId, onBack, onSuccess }) => {
         profileImageFile: null,
         profileImage: getImageUrl(provider.profileImage) || null,
         balance: provider.balance || 0,
+        bankName: provider.bankName || '',
         accountName: provider.accountName || '',
+        IbanNumber: provider.ibanNumber || '',
         status: provider.status || 'Active'
       });
 
@@ -490,11 +494,32 @@ const ProviderForm = ({ providerId, onBack, onSuccess }) => {
             </div>
 
             <div className="form-group">
-              <label>اسم البنك (Bank Name)</label>
+              <label>اسم البنك (Account Name)</label>
               <input
                 type="text"
                 name="accountName"
                 value={formData.accountName}
+                onChange={handleInputChange}
+              />
+            </div>
+
+
+            <div className="form-group">
+              <label>اسم البنك (Bank Name)</label>
+              <input
+                type="text"
+                name="bankName"
+                value={formData.bankName}
+                onChange={handleInputChange}
+              />
+            </div>
+
+            <div className="form-group">
+              <label>اسم البنك (Iban Number)</label>
+              <input
+                type="text"
+                name="IbanNumber"
+                value={formData.IbanNumber}
                 onChange={handleInputChange}
               />
             </div>

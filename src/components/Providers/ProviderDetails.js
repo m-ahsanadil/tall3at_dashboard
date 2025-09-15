@@ -219,6 +219,11 @@ const ProviderDetails = ({ providerId, onBack, onViewTrip, onViewBooking }) => {
               <span>اسم البنك: {provider.bankName || '---'}</span>
             </div>
 
+              <div className="contact-item">
+              <FontAwesomeIcon icon={faBuilding} />
+              <span>اسم البنك: {provider.accountName || '---'}</span>
+            </div>
+
             <div className="contact-item">
               <FontAwesomeIcon icon={faBookmark} />
               <span>رقم الآيبان: {provider.ibanNumber || '---'}</span>
