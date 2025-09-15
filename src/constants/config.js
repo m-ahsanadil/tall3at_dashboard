@@ -37,7 +37,7 @@ export const GENDER_OPTIONS = [
   { value: 'Female', label: 'Female' },
 ];
 
-// API Configuration
+// API Configuration..
 export const API_CONFIG = {
   BASE_URL: 'https://devwebapi.tall3at.com',
   TIMEOUT: 10000,
